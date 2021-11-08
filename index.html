@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link
+            rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"/>
+            <link rel="stylesheet" href="/main.css">
+            <link rel="stylesheet" href="/reset.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" 
+            integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" 
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400&display=swap" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Castoro&family=Chakra+Petch:wght@300;400&family=PT+Sans+Caption&display=swap" rel="stylesheet">
+            <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+        <title>Marlon Murcia</title>
+    </head>
+    <body onload="onload()">
+        <main>
+            <header class="main-header">
+                <nav class="main-nav">
+                    <a href="#" class="logo"><i class="fas fa-code"><span class="name">Marlon</span><span class="lastN">Murcia</span></i></a>
+                    <button class="open-menu" aria-label="Abrir menú">
+                        <i class="fas fa-bars"></i> 
+                    </button>
+                    <ul class="menu-ul">
+                        <button class="close-menu" aria-label="Cerrar menú">
+                            <i class="fas fa-times"></i>
+                        </button>
+                        <li class="list-item"><a href="#" class="link">Perfil</a></li>
+                        <li class="list-item"><a href="#skills  " class="link">Habilidades</a></li>
+                        <li class="list-item"><a href="#proyects" class="link">Mis Proyectos</a></li>
+                        <li class="list-item"><a href="#contact" class="link">Contacto</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <section class="profile">
+                <div class="profile-info">
+                    <h1 class="profile-tittle">¡Bienvenido!</h1> <h2 class="profile-subTittle"><br/> Mi nombre es Marlon Murcia</h2>
+                    <p class="profile-details">
+                        Soy una persona Autodidacta, apasionado por la tecnología y todo su desarrollo, estoy en constante aprendizaje
+                        y poseo conocimientos en desarrollo <b>Frontend y Backend</b>.
+                    </p>
+                </div>
+                <figure class="profile-img">
+                    <img src="/pics/picture-profile2.png"  class="profile-picture" alt="Foto Desarrollador">
+                    <div class="profile-links">
+                        <a href="" class="link" title="Github"><i class="fab fa-github-square"></i>Github</a>
+                        <a href="" class="link" title="Mi Cv"><i class="fas fa-briefcase"></i>Mi Cv</a>    
+                        <a href="" class="link" title="Linkedin"><i class="fab fa-linkedin"></i>Linkedin</a> 
+                    </div>
+                </figure>
+            </section>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgb(77, 218, 101)" fill-opacity="1" d="M0,64L60,96C120,128,
+                240,192,360,192C480,192,600,128,720,128C840,128,960,192,1080,224C1200,256,1320,256,1380,256L1440,256L1440,320L1380,320C1320,
+                320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+            <section class="Skills" id="skills">
+                <h1 class="tittles"> Mis Habilidades y Conocimientos</h1>
+                <input type="checkbox" class="switch" id="switch" onclick="inputSwitch()">
+                <label for="switch" title="Seleccionar" class="lbl"><span>Frontend</span> <span>Backend</span></label>
+                <div class="items" id="items">
+                    <div class="skill-item" id="front">
+                        <h2 class="frontend">Lenguajes y Frameworks Frontend</h2>
+                        
+                        <div class="icons">
+                            <div class="pair">
+                                <span>HTML5</span>
+                                <a href="" class="item1"><i class="fab fa-html5"></i></a>
+                                <span>CSS3</span>
+                                <a href="" class="item"><i class="fab fa-css3-alt"></i></a>
+                            </div>
+                            <div class="pair">
+                                <span>JavaScript</span>
+                                <a href="" class="item1"><i class="fab fa-js-square"></i></a>
+                                <span>Vue js</span>
+                                <a href="" class="item"><i class="fab fa-vuejs"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-item" id="back">
+                        <h2 class="frontend">Lenguajes y Frameworks Backend</h2>
+                        <div class="icons">
+                            <div class="pair">
+                                <span>SQL</span>
+                                <a href="" class="item1"><i class="fas fa-database"></i></a>
+                                <span>Python</span>
+                                <a href="" class="item"><i class="fab fa-python"></i></a>
+                            </div>
+                            <div class="pair">
+                                <span>Java</span>
+                                <a href="" class="item1"><i class="fab fa-java"></i></a>
+                                <span>Django Rest</span>
+                                <a href="" class="item"><i class='bx bxl-django'></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-tools">
+                    <h2 class="frontend">Herramientas y Tecnologías</h2>
+                        <div class="slides">
+                                
+                            <input type="radio" name="radio-btn" id="radio1" onclick="sliderState(1,0)">
+                            <input type="radio" name="radio-btn" id="radio2" onclick="sliderState(2,0)">
+                            <input type="radio" name="radio-btn" id="radio3" onclick="sliderState(3,0)">
+                            <input type="radio" name="radio-btn" id="radio4" onclick="sliderState(4,0)">
+                            <input type="radio" name="radio-btn" id="radio5" onclick="sliderState(5,0)"> 
+
+                            <figure class="slide first">
+                                <img src="/pics/mysql-logo.jpg" alt="logo mysql">
+                            </figure>
+                            <figure class="slide">
+                                <img src="/pics/postgre.png" alt="logo postgresql">
+                            </figure>
+                            <figure class="slide">
+                                <img src="/pics/git.jpg" alt="logo git">
+                            </figure>
+                            <figure class="slide">
+                                <img src="/pics/postman.png" alt="logo postman">
+                            </figure>
+                            <figure class="slide">
+                                <img src="/pics/Jira-Logo.png" alt="logo jira">
+                            </figure>
+                        </div>
+                        <div class="navigation-manual" id="manual">
+                            <label for="radio1" class="manual-btn" id="rd1"></label>
+                            <label for="radio2" class="manual-btn" id="rd2"></label>
+                            <label for="radio3" class="manual-btn" id="rd3"></label>
+                            <label for="radio4" class="manual-btn" id="rd4"></label>
+                            <label for="radio5" class="manual-btn" id="rd5"></label>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="proyects">
+                <div class="sec"></div>
+                <h1 class="tittles">Algunos de mis proyectos</h1>
+                <div class="content-proyects">
+                    <div class="row">
+                        <div class="prj">
+                            <a href=""><figure class="prj-content">
+                                <img src="/pics/Agencia Turismo.PNG" alt="imagen ">
+                                <i class="far fa-eye" id="icon"></i>
+                            </figure></a>
+                        </div>
+                        <div class="prj">
+                            <a href=""><figure class="prj-content">
+                                <img src="/pics/tereto.PNG" alt="imagen proyecto java">
+                                <i class="far fa-eye" id="icon"></i>
+                            </figure></a>
+                        </div>
+                        <div class="prj">
+                            <a href=""><figure class="prj-content"> 
+                                <img src="/pics/ready.PNG" alt="">
+                                <i class="far fa-eye" id="icon"></i>
+                            </figure></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="prj">
+                            <a href=""><figure class="prj-content">
+                                <img src="/pics/productos.PNG" alt="">
+                                <i class="far fa-eye" id="icon"></i>
+                            </figure></a>
+                        </div>
+                        <div class="prj">
+                            <a href=""><figure class="prj-content">
+                                <img src="/pics/ready.PNG" alt="">
+                                <i class="far fa-eye" id="icon"></i>
+                            </figure></a>
+                        </div>
+                        <div class="prj">
+                            <a href=""><figure class="prj-content">
+                                <img src="/pics/Agencia Turismo.PNG" alt="">
+                                <i class="far fa-eye" id="icon"></i>
+                            </figure></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="contact">  
+                <h1 class="tittles">Contáctame</h1>
+                <div class="content-contact">
+
+                </div>
+            </section>
+        </main>
+        <script defer src="/functions.js"></script>
+    </body> 
+</html>
