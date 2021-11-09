@@ -84,16 +84,6 @@
     color: rgb(67, 255, 130);
 }
 
-.menu-ul .indicador{
-    width: 0px;
-    right: 0;
-    height: 2px;
-    background-color: rgb(67, 255, 130);
-    position: absolute;
-    top: 54px;
-    transition: .3s ease-in-out all;
-    transform: translate(500px);
-}
 
 .open-menu,
 .close-menu{

@@ -21,13 +21,6 @@ const labelRd5          = document.getElementById("rd5");
 const navigationM       = document.getElementById("manual");
 const icon              = document.getElementById("icon");
 
-const menu              = document.getElementById("menu");
-const indicador         = document.getElementById("indicador")
-const seccion1          = document.querySelector(".profile")
-const seccion2          = document.querySelector(".Skills")
-const seccion3          = document.querySelector(".proyects")
-const seccion4          = document.querySelector(".contact")
-
 
 function toggleMenu(){
     menu.classList.toggle("menu_opened")
