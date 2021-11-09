@@ -573,7 +573,6 @@
 }
 
 .content-proyects{
-    width: 100vw;
     height: fit-content;
 }
 
@@ -584,7 +583,8 @@
 }
 
 .content-proyects .prj{
-    width: 90%;
+    max-width: 500px;
+    width: 80%;
     height: 230px;
     min-width: 250px;
     background-color: rgba(39, 39, 39, 0.657);
@@ -597,11 +597,57 @@
     filter: brightness(60%);
     -webkit-filter: brightness(60%); 
     width: 100%;
-    height: 230px;
+    height: 215px;
 }
 
 .prj-content{
+    padding-top: 15px;
     position: relative;
+}
+
+.prj-content span{
+    position: absolute;
+    display: flex;
+    top: 0;
+    line-height: 15px;
+    margin-left: 40%;
+    margin-right: auto;
+    font-weight: 550;
+    color: rgba(236, 236, 236, 0.767);
+    font-size: 13px;
+}
+
+.prj-content circle{
+    position: absolute;
+    background-color: #FF5F57;
+    border-radius: 20px;
+    top: 0;
+    margin-top: 2px;
+    margin-left: 6px;
+    width: 10px;
+    height: 10px;
+}
+
+.prj-content .y{
+    position: absolute;
+    background-color: #FFBD2E;
+    border-radius: 20px;
+    top: 0;
+    margin-top: 2px;
+    margin-left: 22px;
+    width: 10px;
+    height: 10px;
+}
+
+.prj-content .g{
+    position: absolute;
+    background-color: #28CA41;
+    border-radius: 20px;
+    top: 0;
+    margin-top: 2px;
+    margin-left: 40px;
+    width: 10px;
+    height: 10px;
 }
 
 .row .prj i{
@@ -616,21 +662,18 @@
 }
 
 
-
 @media(min-width: 950px){
     .content-proyects .row{
-        flex-direction: inherit;
-        margin: 0 10px 10px;
+        flex-direction: row;
+        justify-content: center;    
     }
     .content-proyects .prj{
-        height: 300px;
+        height: 270px;
+        max-width: 500px;
     }
     
     .content-proyects .prj img{
-        height: 300px;
-    }
-    .content-proyects{
-        width: 99vw;
+        height: 257px
     }
     .row .prj i{
         font-size: 35px;
@@ -660,7 +703,7 @@
 .contact-p{
     font-size: 18px;
     color: rgb(240 240 240);
-    max-width: 89%;
+    max-width: 65%;
     text-align: center;
     line-height: 20px;
     justify-content: center;
@@ -753,15 +796,15 @@ footer span{
     margin-left: auto;
     margin-right: auto;
     color: rgba(255, 255, 255, 0.52);
-    font-size: 15px;
+    font-size: 13px;
 }
 
 footer p{
-    font-size: 15px;
+    font-size: 12px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 20px;
+    margin-top: 14px;
     min-width: 300px;
     color: rgba(216, 216, 216, 0.26);
 }
