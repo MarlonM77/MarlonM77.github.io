@@ -84,10 +84,43 @@
     color: rgb(67, 255, 130);
 }
 
+.menu-ul .indicador{
+    width: 0px;
+    right: 0;
+    height: 2px;
+    background-color: rgb(67, 255, 130);
+    position: absolute;
+    top: 54px;
+    transition: .3s ease-in-out all;
+    transform: translate(500px);
+}
+
 .open-menu,
 .close-menu{
     display: none;
 }
+
+/*.theme{
+    position: fixed;
+    right: 0;
+    top: 70px;
+    margin: 15px;
+    width: 45px;
+    height: 45px;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 20px;
+    font-size: 30px;
+    color: rgb(255, 230, 0);
+    cursor: pointer;
+    transition: .5s;
+    z-index: 10;
+}
+
+.theme:hover{
+    transform: scale(1.2);
+}
+*/
 
 @media (max-width: 900px) {
     .main-nav .menu-ul{
@@ -612,4 +645,140 @@
     .row .prj i{
         font-size: 35px;
     }
+}
+
+
+/*---------------------------contacto---------------------*/
+
+
+.content-contact{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.tittle-contact{
+    margin-top: 55px;
+    margin-bottom: 25px;
+    font-size: 1.6em;
+    text-align: center;
+    color: rgb(67, 255, 130);
+}
+
+
+.contact-p{
+    font-size: 18px;
+    color: rgb(240 240 240);
+    max-width: 89%;
+    text-align: center;
+    line-height: 20px;
+    justify-content: center;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 5px;
+}
+
+
+.content-contact .links{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+    margin-top: 80px;    
+}
+
+.links a{
+    display: flex;
+    margin-bottom: 25px;
+    font-size: 14px;
+    color: rgb(180, 180, 180);
+    align-items: center;
+}
+
+.links a i{
+    height: 35px;
+    font-size: 35px;
+    color: rgb(240, 240, 240);
+    transition: .5s;
+}
+
+.links a i:hover{
+    color: rgb(74, 255, 104);
+    text-shadow: 0px 0px 10px rgb(74, 255, 104);
+    transform: scale(1.2);
+}
+
+
+
+.links a span{
+    margin: 0 0 0 30px;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+.links .linked{
+    margin-left: 35px;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+
+@media(min-width: 950px){ 
+    .content-contact{ 
+        margin-bottom: 120px;
+    }
+    .tittle-contact{
+        font-size: 1.6em;
+    }  
+    .content-contact .links{
+        flex-direction:row;
+        margin-top: 80px;
+    }
+    .contact-p{
+        font-size: 22px;
+    }
+    .links a{
+        display: grid;
+        margin: 110px 50px 110px 50px;
+        
+    }
+    .links a span{
+        margin: 20px 0 0 0;
+        font-size: 19px;
+    }
+    .links .linked{
+        margin-left: 0;
+        
+    }
+    .links a i{
+        text-align: center;
+        font-size: 45px;
+    }
+}
+
+
+footer span{
+    margin-left: auto;
+    margin-right: auto;
+    color: rgba(255, 255, 255, 0.52);
+    font-size: 15px;
+}
+
+footer p{
+    font-size: 15px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    min-width: 300px;
+    color: rgba(216, 216, 216, 0.26);
+}
+
+.content-footer{
+    text-align: center;
+    height: 100px;
+    padding: 10px;
+    background-color: rgba(19, 19, 19, 0.712);
 }

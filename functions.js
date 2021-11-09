@@ -21,7 +21,12 @@ const labelRd5          = document.getElementById("rd5");
 const navigationM       = document.getElementById("manual");
 const icon              = document.getElementById("icon");
 
-let   counter           = 1;
+const menu              = document.getElementById("menu");
+const indicador         = document.getElementById("indicador")
+const seccion1          = document.querySelector(".profile")
+const seccion2          = document.querySelector(".Skills")
+const seccion3          = document.querySelector(".proyects")
+const seccion4          = document.querySelector(".contact")
 
 
 function toggleMenu(){
@@ -48,6 +53,8 @@ function onload(){
     labelRd1.style.backgroundColor = "rgb(74, 255, 104)";
     labelRd1.style.boxShadow       = "0px 0px 10px rgb(74, 255, 104)";
 }
+
+let counter = 1;
 
 function sliderState(state, counter){
     if(state == 1 || counter == 1){
@@ -126,4 +133,3 @@ navigationM.addEventListener('mouseover', function() {
 navigationM.addEventListener('mouseleave', function() {
     temporizador = setInterval("slider()", 4000);
 });
-
