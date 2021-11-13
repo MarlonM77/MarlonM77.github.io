@@ -1,0 +1,175 @@
+
+.tittle-info{
+    margin-top: 45px;
+    text-align: center;
+    color: rgb(67, 255, 130);
+    font-size: 22px;
+    animation: fade-in 5s;
+}
+
+.comeBack{
+    position: absolute;
+    background: transparent;
+    border: none;
+    margin-left: 30px;
+}
+
+.back span{
+    position: relative;
+    top: -10px;
+    display: flex;
+    left: -19px;
+    font-size: 35px;
+    color: #43f764;
+}
+
+
+.container-content{
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+    text-align: center;
+}
+
+.content{
+    height: 330px;
+    width: 400px;
+    overflow: hidden;
+    position: relative;
+}
+
+.content .images{
+    height: 100%;
+    width: 100%;
+}
+
+.images img{
+    height: 100%;
+    width: 100%;
+    animation: fade-in 1s;
+}
+
+@keyframes fade-in{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.content .slide{
+    position: absolute;
+    top: -20px;
+    width: 25px;
+    height: 100%;
+}
+
+.content .slide:hover{
+    background-color: rgba(22, 22, 22, 0.479);
+}
+
+.content .slide:hover span{
+    color: rgba(179, 179, 179, 0.918);
+    transform: scale(1.1);
+}
+
+.slide span{
+    transition: .7s;
+    font-size: 35px;
+    color: rgb(20, 20, 20);
+    cursor: pointer;
+    margin-top: 150px;
+}
+
+.content .right{
+    right: 0;
+}
+
+.description{
+    color: rgb(175, 175, 175);
+    text-align: start;
+    margin-top: 25px;
+    padding: 15px;
+}
+
+.description p{
+    margin-bottom: 20px;
+    
+}
+
+.sub{
+    color: rgb(235, 235, 235);
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.tecnologies{
+    margin-top: 45px;
+}
+
+ul .iconT{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.iconT img{
+    margin-right: 15px;
+}
+
+@media (min-width: 600px) {
+    .content{
+        height: 400px;
+        width: 650px;
+    }
+    .content .slide{
+        width: 40px;
+    }
+}
+
+@media (min-width: 950px) {
+    .content{
+        height: 450px;
+        width: 750px;
+    }
+    .content .slide{
+        width: 45px;
+    }
+    .slide span{
+        margin-top: 200px;
+        font-size: 40px;
+    }
+    .description{
+        max-width: 800px;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .back span{
+        position: relative;
+        top: -10px;
+        display: flex;
+        left: 300px;
+        font-size: 35px;
+        color: #43f764;
+    }
+}
+
+@media (max-width: 403px) {
+    .content{
+        height: 300px;
+        width: 350px;
+    }
+
+    .slide span{
+        margin-top: 130px;
+        font-size: 30px;
+    }
+    .content .slide{
+        width: 35px;
+    }
+}

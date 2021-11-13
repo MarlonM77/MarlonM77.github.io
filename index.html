@@ -5,8 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
             <link
             rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"/>
-            <link rel="stylesheet" href="/main.css">
-            <link rel="stylesheet" href="/reset.css">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" 
             integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" 
             crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -20,6 +18,8 @@
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
             <link href="https://fonts.googleapis.com/css2?family=Castoro&family=Chakra+Petch:wght@300;400&family=PT+Sans+Caption&display=swap" rel="stylesheet">
             <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+            <link rel="stylesheet" href="/styles/main.css">
+            <link rel="stylesheet" href="/styles/reset.css">
         <title>Marlon Murcia</title>
     </head>
     <body onload="onload()">
@@ -48,8 +48,8 @@
                 <div class="profile-info">
                     <h1 class="profile-tittle">¡Bienvenido!</h1> <h2 class="profile-subTittle"><br/> Mi nombre es Marlon Murcia</h2>
                     <p class="profile-details">
-                        Soy una persona Autodidacta, apasionado por la tecnología y todo su desarrollo, estoy en constante aprendizaje
-                        y poseo conocimientos en desarrollo <b>Frontend y Backend</b>.
+                        Soy una persona autodidacta, apasionado por la tecnología y su desarrollo, estoy en constante aprendizaje; 
+                        poseo conocimientos en desarrollo <b>Frontend y Backend</b>.
                     </p>
                 </div>
                 <figure class="profile-img">
@@ -57,7 +57,7 @@
                     <div class="profile-links">
                         <a href="https://github.com/MarlonM77" class="link" title="Github" target="blank2"><i class="fab fa-github-square"></i>Github</a>
                         <a href="https://interacpedia.com/user/marlon-murcia-betancourt?tab=profile" class="link" title="Mi Cv" target="blank"><i class="fas fa-briefcase"></i>Interacpedia</a>    
-                        <a href="" class="link" title="Linkedin"><i class="fab fa-linkedin"></i>Linkedin</a> 
+                        <a href="https://www.linkedin.com/in/marlon-murcia-betancourt-aba508225/    " class="link" title="Linkedin" target="blank3"><i class="fab fa-linkedin"></i>Linkedin</a> 
                     </div>
                 </figure>
             </section>
@@ -114,7 +114,6 @@
                             <input type="radio" name="radio-btn" id="radio3" onclick="sliderState(3,0)">
                             <input type="radio" name="radio-btn" id="radio4" onclick="sliderState(4,0)">
                             <input type="radio" name="radio-btn" id="radio5" onclick="sliderState(5,0)"> 
-
                             <figure class="slide first">
                                 <img src="/pics/mysql-logo.jpg" alt="logo mysql" >
                             </figure>
@@ -148,68 +147,98 @@
                 <div class="content-proyects">
                     <div class="row">
                         <div class="prj">
-                            <a href=""><figure class="prj-content">
+                            <figure class="prj-content">
                                 <circle></circle>
                                 <circle class="y"></circle>
                                 <circle class="g"></circle>
-                                <span>Turismo</span>
+                                <span class="tit">Turismo</span>
                                 <img src="/pics/Agencia Turismo.PNG" alt="imagen ">
-                                <i class="far fa-eye" id="icon"></i>
-                            </figure></a>
+                                <div class="popup">
+                                    <a href="./turismo.html"><i class="far fa-eye" id="icon"></i></a>
+                                    <a href="./turismo.html" class="span"><span class="data">Ver más→</span></a> 
+                                    <a href="https://github.com/MarlonM77" target="blank"><i class="fab fa-github"></i></a>
+                                    <a href="https://github.com/MarlonM77" class="span" target="blank"><span class="data">Ver Código→</span></a> 
+                                </div>
+                            </figure>
                         </div>
                         <div class="prj">
-                            <a href=""><figure class="prj-content"> 
+                            <figure class="prj-content"> 
                                 <circle></circle>
                                 <circle class="y"></circle>
                                 <circle class="g"></circle>
                                 <span>Renta Autos</span>
                                 <img src="/pics/ready.PNG" alt="">
-                                <i class="far fa-eye" id="icon"></i>
-                            </figure></a>
+                                <div class="popup">
+                                    <a href="./rentadora.html"><i class="far fa-eye" id="icon"></i></a>
+                                    <a href="./rentadora.html" class="span"><span class="data">Ver más→</span></a> 
+                                    <a href="https://github.com/MarlonM77/ReadyCar/tree/master" target="blank2"><i class="fab fa-github"></i></a>
+                                    <a href="https://github.com/MarlonM77/ReadyCar/tree/master" class="span" target="blank2"><span class="data">Ver Código→</span></a> 
+                                </div>
+                            </figure>
                         </div>
                     </div>
                     <div class="row">
                         <div class="prj">
-                            <a href=""><figure class="prj-content">
+                                <figure class="prj-content">
                                 <circle></circle>
                                 <circle class="y"></circle>
                                 <circle class="g"></circle>
                                 <span>Mi Portafolio</span>
                                 <img src="/pics/port.PNG" alt="">
-                                <i class="far fa-eye" id="icon"></i>
-                            </figure></a>
+                                <div class="popup">
+                                    <a href=""><i class="far fa-eye" id="icon"></i></a>
+                                    <a href="" class="span"><span class="data">Ver más→</span></a> 
+                                    <a href=""><i class="fab fa-github"></i></a>
+                                    <a href="" class="span"><span class="data">Ver Código→</span></a> 
+                                </div>
+                            </figure>
                         </div>
                         <div class="prj">
-                            <a href=""><figure class="prj-content">
+                            <figure class="prj-content">
                                 <circle></circle>
                                 <circle class="y"></circle>
                                 <circle class="g"></circle>
                                 <span>Gestion de Usuarios</span>
                                 <img src="/pics/tereto.PNG" alt="imagen proyecto java">
-                                <i class="far fa-eye" id="icon"></i>
-                            </figure></a>
+                                <div class="popup">
+                                    <a href="./gestionation.html"><i class="far fa-eye" id="icon"></i></a>
+                                    <a href="./gestionation.html" class="span"><span class="data">Ver más→</span></a> 
+                                    <a href="https://github.com/MarlonM77/gestionationSAS/tree/master/src" target="blank3"><i class="fab fa-github"></i></a>
+                                    <a href="https://github.com/MarlonM77/gestionationSAS/tree/master/src" class="span" target="blank3"><span class="data">Ver Código→</span></a> 
+                                </div>
+                            </figure>
                         </div>
                     </div>
                     <div class="row">
                         <div class="prj">
-                            <a href=""><figure class="prj-content">
+                            <figure class="prj-content">
                                 <circle></circle>
                                 <circle class="y"></circle>
                                 <circle class="g"></circle>
                                 <span>Tienda de Moda</span>
                                 <img src="/pics/Agencia Turismo.PNG" alt="">
-                                <i class="far fa-eye" id="icon"></i>
-                            </figure></a>
+                                <div class="popup">
+                                    <a href=""><i class="far fa-eye" id="icon"></i></a>
+                                    <a href="" class="span"><span class="data">Ver más→</span></a> 
+                                    <a href=""><i class="fab fa-github"></i></a>
+                                    <a href="" class="span"><span class="data">Ver Código→</span></a> 
+                                </div>
+                            </figure>
                         </div>
                         <div class="prj">
-                            <a href=""><figure class="prj-content">
+                            <figure class="prj-content">
                                 <circle></circle>
                                 <circle class="y"></circle>
                                 <circle class="g"></circle>
                                 <span>Cosola</span>
                                 <img src="/pics/productos.PNG" alt="">
-                                <i class="far fa-eye" id="icon"></i>
-                            </figure></a>
+                                <div class="popup">
+                                    <a href=""><i class="far fa-eye" id="icon"></i></a>
+                                    <a href="" class="span"><span class="data">Ver más→</span></a> 
+                                    <a href=""><i class="fab fa-github"></i></a>
+                                    <a href="" class="span"><span class="data">Ver Código→</span></a>  
+                                </div>
+                            </figure>
                         </div>
                     </div>
                 </div>
@@ -220,8 +249,8 @@
                 <!--<div class="line"></div>-->
                 <div class="content-contact">
                     <p class="contact-p">
-                        Me gustan los retos, superarme y estoy dispuesto a aprender nuevas metodologías, nuevas tecnologías y/o Lenguajes
-                        para aportar con mis conocimientos y Habilidades en tu empresa, proyecto, startup, emprendimiento etc..
+                        Me gustan los retos, estoy dispuesto aprender nuevas metodologías, nuevas tecnologías y/o lenguajes
+                        para aportar con mis conocimientos y habilidades en tu empresa, proyecto, startup, emprendimiento etc.
                     </p>
                     <div class="links">
                         <a href="https://interacpedia.com/user/marlon-murcia-betancourt?tab=profile" target="blnk4">
@@ -246,6 +275,6 @@
                 </div>
             </footer>
         </main>
-        <script defer src="/functions.js"></script>
+        <script defer src="/filesJs/functions.js"></script>
     </body> 
 </html>

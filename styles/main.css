@@ -1,6 +1,9 @@
 
 /*---------------------------MAIN HEADER---------------------*/
 
+main{
+    animation: fade-in 3s;
+}
 
 .main-header{
     background-color: var(--header-color);
@@ -88,6 +91,15 @@
 .open-menu,
 .close-menu{
     display: none;
+}
+
+@keyframes fade-in{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
 
 /*.theme{
@@ -217,13 +229,20 @@
     display: grid;
     text-decoration: none;
     color: var(--body-color);
+    font-family: 'Chakra Petch', sans-serif;
 }
 
 .profile-links .link:hover{
     transform: scale(1.1);
     color: rgb(255, 255, 255);
     font-size: 12px;
-    font-family: 'Chakra Petch', sans-serif;
+    
+}
+
+.profile-links .link:hover i{
+    text-shadow: 0px 0px 10px rgb(74, 255, 104);
+    color: rgb(74, 255, 104);
+    
 }
 
 .profile-links .link i{
@@ -603,6 +622,7 @@
 .prj-content{
     padding-top: 15px;
     position: relative;
+    overflow: hidden;
 }
 
 .prj-content span{
@@ -650,16 +670,66 @@
     height: 10px;
 }
 
-.row .prj i{
+.prj .popup{
+    width: 100%;
+    height: 95%;
+    background-color: rgba(0, 0, 0, 0.863);
     position: absolute;
-    display: block;
-    z-index: 2;
-    top: 45%;
-    left: 45%;
-    font-size: 30px;
-    color: rgb(74, 255, 104);
-    text-shadow: 0px 0px 10px rgb(74, 255, 104);
+    top: 0;
+    margin-top: 14px;
+    transform: translate(0px, 300px);
+    transition: ease-in-out all 300ms;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
+
+.prj-content:hover .popup{
+    transform: translate(0px, 0px);
+    pointer-events: all;
+    filter: blur(0);
+}
+
+
+
+.row .popup i{
+    color: rgb(228, 228, 228);
+    text-shadow: 0px 0px 10px rgb(209, 209, 209);
+    margin: 10px;
+}
+
+.popup a span{
+    font-size: 12px;
+}   
+
+.popup a{
+    display: flex;
+    font-size: 20px;
+    width: 30px;
+    margin: 0 0px 0 20px;
+    justify-content: center;
+}
+
+.popup .data{
+    display:contents;
+} 
+
+.popup .span{
+    margin-left: 0;
+    width: 75px;
+    transition: .5s;
+}
+
+.popup .span:hover{
+    transform:translate(10px);
+}
+
+.popup .span:hover .data{
+    color: rgb(74, 255, 104);
+}
+
+
 
 
 @media(min-width: 950px){
@@ -676,7 +746,7 @@
         height: 257px
     }
     .row .prj i{
-        font-size: 35px;
+        font-size: 25px;
     }
 }
 
@@ -739,10 +809,8 @@
 
 .links a i:hover{
     color: rgb(74, 255, 104);
-    text-shadow: 0px 0px 10px rgb(74, 255, 104);
     transform: scale(1.2);
 }
-
 
 
 .links a span{
