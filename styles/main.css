@@ -711,6 +711,15 @@ main{
     justify-content: center;
 }
 
+.spanD .dataD{
+    font-size: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    text-align: center;
+    line-height: 20px;
+}
+
 .popup .data{
     display:contents;
 } 
@@ -771,7 +780,7 @@ main{
 
 
 .contact-p{
-    font-size: 18px;
+    font-size: 16px;
     color: rgb(240 240 240);
     max-width: 65%;
     text-align: center;
