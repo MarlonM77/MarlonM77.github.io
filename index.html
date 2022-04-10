@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link
+            rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"/>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" 
+            integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" 
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400&display=swap" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Castoro&family=Chakra+Petch:wght@300;400&family=PT+Sans+Caption&display=swap" rel="stylesheet">
+            <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+            <link rel="stylesheet" href="/styles/main.css">
+            <link rel="stylesheet" href="/styles/reset.css">
+        <title>Marlon Murcia</title>
+    </head>
+    <body onload="onload()">
+        <main>
+            <header class="main-header">
+                <nav class="main-nav">
+                    <a href="#" class="logo"><i class="fas fa-code"><span class="name">Marlon</span><span class="lastN">Murcia</span></i></a>
+                    <button class="open-menu" aria-label="Abrir menú">
+                        <i class="fas fa-bars"></i> 
+                    </button>
+                    <ul class="menu-ul">
+                        <button class="close-menu" aria-label="Cerrar menú">
+                            <i class="fas fa-times"></i>
+                        </button>
+                        <li class="list-item"><a href="#" class="link">Perfil</a></li>
+                        <li class="list-item"><a href="#skills  " class="link">Habilidades</a></li>
+                        <li class="list-item"><a href="#proyects" class="link">Mis Proyectos</a></li>
+                        <li class="list-item"><a href="#contact" class="link">Contacto</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <!--<button class="theme" id="bulb">
+                <i class="fas fa-lightbulb"></i>
+            </button>-->
+            <section class="profile">
+                <div class="profile-info">
+                    <h1 class="profile-tittle">¡Bienvenido!</h1> <h2 class="profile-subTittle"><br/> Mi nombre es Marlon Murcia</h2>
+                    <p class="profile-details">
+                        Soy una persona autodidacta, apasionado por la tecnología y su desarrollo, estoy en constante aprendizaje; 
+                        poseo conocimientos en desarrollo <b>Frontend y Backend</b>.
+                    </p>
+                </div>
+                <figure class="profile-img">
+                    <img src="/pics/picture-profile2.png"  class="profile-picture" alt="Foto Desarrollador">
+                    <div class="profile-links">
+                        <a href="https://github.com/MarlonM77" class="link" title="Github" target="blank2"><i class="fab fa-github-square"></i>Github</a>
+                        <a href="https://interacpedia.com/user/marlon-murcia-betancourt?tab=profile" class="link" title="Mi Cv" target="blank"><i class="fas fa-briefcase"></i>Interacpedia</a>    
+                        <a href="https://www.linkedin.com/in/marlon-murcia-betancourt-aba508225/    " class="link" title="Linkedin" target="blank3"><i class="fab fa-linkedin"></i>Linkedin</a> 
+                    </div>
+                </figure>
+            </section>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgb(77, 218, 101)" fill-opacity="1" d="M0,64L60,96C120,128,
+                240,192,360,192C480,192,600,128,720,128C840,128,960,192,1080,224C1200,256,1320,256,1380,256L1440,256L1440,320L1380,320C1320,
+                320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+            <section class="Skills" id="skills">
+                <h1 class="tittles"> Mis Habilidades y Conocimientos</h1>
+                <!--<div class="line"></div>-->
+                <input type="checkbox" class="switch" id="switch" onclick="inputSwitch()">
+                <label for="switch" title="Seleccionar" class="lbl"><span>Frontend</span> <span>Backend</span></label>
+                <div class="items" id="items">
+                    <div class="skill-item" id="front">
+                        <h2 class="frontend">Lenguajes y Frameworks Frontend</h2>
+                        
+                        <div class="icons">
+                            <div class="pair">
+                                <span>HTML5</span>
+                                <a href="" class="item1" title="Estructuración"><i class="fab fa-html5"></i></a>
+                                <span>CSS3</span>
+                                <a href="" class="item" title="Estilos"><i class="fab fa-css3-alt"></i></a>
+                            </div>
+                            <div class="pair">
+                                <span>JavaScript</span>
+                                <a href="" class="item1" title="Interacción"><i class="fab fa-js-square"></i></a>
+                                <span>Vue js</span>
+                                <a href="" class="item" title="Framework"><i class="fab fa-vuejs"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-item" id="back">
+                        <h2 class="frontend">Lenguajes y Frameworks Backend</h2>
+                        <div class="icons">
+                            <div class="pair">
+                                <span>SQL</span>
+                                <a href="" class="item1" title="Consultas"><i class="fas fa-database"></i></a>
+                                <span>Python</span>
+                                <a href="" class="item" title="Lenguaje programación"><i class="fab fa-python"></i></a>
+                            </div>
+                            <div class="pair">
+                                <span>Java</span>
+                                <a href="" class="item1" title="Lenguaje programación"><i class="fab fa-java"></i></a>
+                                <span>Django Rest</span>
+                                <a href="" class="item" title="framework"><i class='bx bxl-django'></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-tools">
+                    <h2 class="frontend">Herramientas y Tecnologías</h2>
+                        <div class="slides">
+                                
+                            <input type="radio" name="radio-btn" id="radio1" onclick="sliderState(1,0)">
+                            <input type="radio" name="radio-btn" id="radio2" onclick="sliderState(2,0)">
+                            <input type="radio" name="radio-btn" id="radio3" onclick="sliderState(3,0)">
+                            <input type="radio" name="radio-btn" id="radio4" onclick="sliderState(4,0)">
+                            <input type="radio" name="radio-btn" id="radio5" onclick="sliderState(5,0)"> 
+                            <figure class="slide first">
+                                <img src="/pics/mysql-logo.jpg" alt="logo mysql" >
+                            </figure>
+                            <figure class="slide">
+                                <img src="/pics/postgre.png" alt="logo postgresql">
+                            </figure>
+                            <figure class="slide">
+                                <img src="/pics/git.jpg" alt="logo git">
+                            </figure>
+                            <figure class="slide">
+                                <img src="/pics/postman.png" alt="logo postman">
+                            </figure>
+                            <figure class="slide">
+                                <img src="/pics/Jira-Logo.png" alt="logo jira">
+                            </figure>
+                        </div>
+                        <div class="navigation-manual" id="manual">
+                            <label for="radio1" class="manual-btn" id="rd1"></label>
+                            <label for="radio2" class="manual-btn" id="rd2"></label>
+                            <label for="radio3" class="manual-btn" id="rd3"></label>
+                            <label for="radio4" class="manual-btn" id="rd4"></label>
+                            <label for="radio5" class="manual-btn" id="rd5"></label>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="proyects">
+                <div class="sec"></div>
+                <h1 class="tittles">Algunos de mis proyectos</h1>
+                <!--<div class="line"></div>-->
+                <div class="content-proyects">
+                    <div class="row">
+                        <div class="prj">
+                            <figure class="prj-content">
+                                <circle></circle>
+                                <circle class="y"></circle>
+                                <circle class="g"></circle>
+                                <span class="tit">Turismo</span>
+                                <img src="/pics/Agencia Turismo.PNG" alt="imagen ">
+                                <div class="popup">
+                                    <a href="./turismo.html"><i class="far fa-eye" id="icon"></i></a>
+                                    <a href="./turismo.html" class="span"><span class="data">Ver más→</span></a> 
+                                    <a href="https://github.com/MarlonM77" target="blank"><i class="fab fa-github"></i></a>
+                                    <a href="https://github.com/MarlonM77" class="span" target="blank"><span class="data">Ver Código→</span></a> 
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="prj">
+                            <figure class="prj-content"> 
+                                <circle></circle>
+                                <circle class="y"></circle>
+                                <circle class="g"></circle>
+                                <span>Renta Autos</span>
+                                <img src="/pics/ready.PNG" alt="">
+                                <div class="popup">
+                                    <a href="./rentadora.html"><i class="far fa-eye" id="icon"></i></a>
+                                    <a href="./rentadora.html" class="span"><span class="data">Ver más→</span></a> 
+                                    <a href="https://github.com/MarlonM77/ReadyCar/tree/master" target="blank2"><i class="fab fa-github"></i></a>
+                                    <a href="https://github.com/MarlonM77/ReadyCar/tree/master" class="span" target="blank2"><span class="data">Ver Código→</span></a> 
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="prj">
+                                <figure class="prj-content">
+                                <circle></circle>
+                                <circle class="y"></circle>
+                                <circle class="g"></circle>
+                                <span>Mi Portafolio</span>
+                                <img src="/pics/port.PNG" alt="">
+                                <div class="popup">
+                                    <a href="#"><i class="far fa-eye" id="icon"></i></a>
+                                    <a href="#" class="span"><span class="data">Ver más→</span></a> 
+                                    <a href="https://github.com/MarlonM77/miPortafolio/tree/master" target="blank4"><i class="fab fa-github"></i></a>
+                                    <a href="https://github.com/MarlonM77/miPortafolio/tree/master" class="span" target="blank4"><span class="data">Ver Código→</span></a> 
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="prj">
+                            <figure class="prj-content">
+                                <circle></circle>
+                                <circle class="y"></circle>
+                                <circle class="g"></circle>
+                                <span>Gestion de Usuarios</span>
+                                <img src="/pics/tereto.PNG" alt="imagen proyecto java">
+                                <div class="popup">
+                                    <a href="./gestionation.html"><i class="far fa-eye" id="icon"></i></a>
+                                    <a href="./gestionation.html" class="span"><span class="data">Ver más→</span></a> 
+                                    <a href="https://github.com/MarlonM77/gestionationSAS/tree/master/src" target="blank3"><i class="fab fa-github"></i></a>
+                                    <a href="https://github.com/MarlonM77/gestionationSAS/tree/master/src" class="span" target="blank3"><span class="data">Ver Código→</span></a> 
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="prj">
+                            <figure class="prj-content">
+                                <circle></circle>
+                                <circle class="y"></circle>
+                                <circle class="g"></circle>
+                                <span>Tienda de Moda</span>
+                                <img src="/pics/juego-dinosaurio.jpg" alt="">
+                                <div class="popup">
+                                    <a href="/index.html#proyects" class="spanD"><span class="dataD">Este proyecto se encuentra en desarrollo,<br>
+                                        Pronto estará disponible.
+                                    </span></a> 
+                                </div>
+                            </figure>
+                        </div>
+                        <div class="prj">
+                            <figure class="prj-content">
+                                <circle></circle>
+                                <circle class="y"></circle>
+                                <circle class="g"></circle>
+                                <span>Consola</span>
+                                <img src="/pics/cangrebrownies.PNG" alt="">
+                                <div class="popup">
+                                    <a href="./consola.html"><i class="far fa-eye" id="icon"></i></a>
+                                    <a href="./consola.html" class="span"><span class="data">Ver más→</span></a> 
+                                    <a href="https://github.com/MarlonM77/Reposteria/tree/master" target="blank"><i class="fab fa-github"></i></a>
+                                    <a href="https://github.com/MarlonM77/Reposteria/tree/master" class="span" target="blank"><span class="data">Ver Código→</span></a>  
+                                </div>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="contact" class="contact"> 
+                <div class="sec"></div> 
+                <h1 class="tittle-contact">Contáctame</h1>
+                <!--<div class="line"></div>-->
+                <div class="content-contact">
+                    <p class="contact-p">
+                        Me gustan los retos, estoy dispuesto aprender nuevas metodologías, nuevas tecnologías y/o lenguajes
+                        para aportar con mis conocimientos y habilidades en tu empresa, proyecto, startup, emprendimiento etc.
+                    </p>
+                    <div class="links">
+                        <a href="https://interacpedia.com/user/marlon-murcia-betancourt?tab=profile" target="blnk4">
+                            <i class="fas fa-address-book" id="inter"></i>
+                            <span>Contáctame por interacpedia</span>
+                        </a>
+                        <a href="mailto:marlondeep77@gmail.com?cc=mmurcia88@misena.edu.co">
+                            <i class="fas fa-envelope" id="gm"></i> 
+                            <span> Contáctame por Gmail</span> 
+                        </a>
+                        <a href="https://www.linkedin.com/in/marlon-murcia-betancourt-aba508225/" target="blnk3">
+                            <i class="fab fa-linkedin" id="link"></i>
+                            <span class="linked">Contáctame por Linkedin</span>
+                        </a>
+                    </div>  
+                </div>
+            </section>
+            <footer>
+                <div class="content-footer">
+                    <span>Hecho con amor ♥</span>
+                    <p>Copyright ©2021 Portafolio MarlonMurcia. <br>Designed By Marlon Murcia</p>
+                </div>
+            </footer>
+        </main>
+        <script defer src="/filesJs/functions.js"></script>
+    </body> 
+</html>
