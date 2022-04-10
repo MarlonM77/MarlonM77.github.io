@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" 
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Castoro&family=Chakra+Petch:wght@300;400&family=PT+Sans+Caption&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/styles/stylesPrj.css">
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/reset.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <header class="main-header">
+            <nav class="main-nav">
+                <a href="/index.html#" class="logo"><i class="fas fa-code"><span class="name">Marlon</span><span class="lastN">Murcia</span></i></a>
+                <button class="open-menu" aria-label="Abrir menú">
+                    <i class="fas fa-bars"></i> 
+                </button>
+                <ul class="menu-ul">
+                    <button class="close-menu" aria-label="Cerrar menú">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <li class="list-item"><a href="/index.html#" class="link">Perfil</a></li>
+                    <li class="list-item"><a href="/index.html#skills  " class="link">Habilidades</a></li>
+                    <li class="list-item"><a href="/index.html#proyects" class="link">Mis Proyectos</a></li>
+                    <li class="list-item"><a href="/index.html#contact" class="link">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="back">
+            <a href="/index.html#proyects" class="comeBack"><span>&#8592;</span></a>
+            <h1 class="tittle-info">Viaja Por Colombia</h1>
+        </div>
+        
+        <div class="container-content">
+            <div class="content">
+                <div class="images">
+                    <img src="/pics/Agencia Turismo.PNG" alt="" class="slid">
+                    <img src="/pics/agencialogin.PNG" alt="" class="slid">
+                    <img src="/pics/AgenciaTurismo3.PNG" alt="" class="slid">
+                    <img src="/pics/agenciahome.PNG" alt="" class="slid">
+                    <img src="/pics/agenciahome4.PNG" alt="" class="slid">
+                    <img src="/pics/agenciahome5.PNG" alt="" class="slid">
+                    <img src="/pics/agenciahome6.PNG" alt="" class="slid">
+                    <img src="/pics/agenciahome7.PNG" alt="" class="slid">
+                </div>
+                <div onclick="side_slide(-1)" class="slide left">
+                    <span class="fas fa-angle-left"></span>
+                </div>
+                <div onclick="side_slide(1)" class="slide right">
+                    <span class="fas fa-angle-right"></span>
+                </div>
+            </div>
+        </div>
+        <div class="description">
+            <h2 class="sub">Acerca de este proyecto</h2>
+            <p>
+                Proyecto desarrollado mediante <b>arquitectura de 3 capas</b>, donde se diseñó y desarrolló
+                desde su base de datos, su capa lógica hasta su capa de presentación.
+            </p>
+            <p>
+                Sitio web de turismo capaz de crear y autenticar usuarios
+                que puedan ver y reservar sus planes de turismo.
+            </p>   
+            <div class="tecnologies">
+                <h2 class="sub">Tecnologías implementadas</h2>
+                <ul class="tecnologies">
+                    <li class="iconT"><img src="/pics/icons8-html-5-48.png" alt="" width="30px"> VueJs (Frontend)</li>
+                    <li class="iconT"><img src="/pics/icons8-css3-48.png" alt="" width="30px"> Nodejs (Levantamiento Fe)</li>
+                    <li class="iconT"><img src="/pics/icons8-javascript-48.png" alt="" width="30px"> Django Rest (Backend)</li>
+                    <li class="iconT"><img src="/pics/icons8-visual-studio-code-2019-48.png" alt="" width="30px"> PostgreSQL (BD)</li>
+                    <li class="iconT"><img src="/pics/icons8-postman-api-64.png" alt="" width="30px"> Postman (Testing)</li>
+                    <li class="iconT"><img src="/pics/icons8-heroku-48.png" alt="" width="30px"> Heroku (Despliegue)</li>
+                    <li class="iconT"><img src="/pics/icons8-git-48.png" alt="" width="30px"> Git (Gestión de versiones)</li>
+                </ul>
+            </div>        
+        </div>
+    </main>
+    <script src="/filesJs/functionsPrj.js"></script>
+    <script src="/filesJs/functions.js"></script>
+</body>
+</html>

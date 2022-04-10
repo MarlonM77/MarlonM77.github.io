@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Chakra Petch', sans-serif;
+    background-color: var(--body-color);
+    padding-top: 70px;
+}
+
+a{
+    text-decoration: none;
+}
+
+:root{
+    --header-color: #0c0b0b;
+    --header-text-color: #ececec;
+    --body-color: #0e0d0d;
+    --header-mobile-color: #0e0c16;
+}
