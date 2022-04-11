@@ -1,4 +1,5 @@
-##Mi Primer Portafolio - Junior Developer :fa-briefcase: :fa-coffee:
+## Mi Primer Portafolio - Junior Developer :fa-briefcase: :fa-coffee:
+
 Este repositorio contiene mi primer portafolio como desarrollador frontend Jr, con algunos de mis proyectos destacados, lenguajes y herramientas que he utilizado a lo largo de este camino de constante aprendizaje y alta autonomía, ya que todo lo aprendido y puesto en práctica ha sido fruto de la incursión en el aprendizaje autodidacta entre otra serie de compelementos de mis capacidades como desarrollador.
 
 # Diseño
