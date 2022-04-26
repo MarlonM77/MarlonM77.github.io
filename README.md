@@ -22,6 +22,6 @@ Como **frontend developer** el diseño, la experiencia y primeras impresiones so
 
 
 
-**Te invito a visitarlo ingresando al siguiente Link!** :tw-1f449: http://marlonmdev.ml/#contact
+**Te invito a visitarlo ingresando al siguiente Link!** :tw-1f449:https://marlonm77.github.io/ ó en http://marlonmdev.ml/
 
 ¡Gracias por visitar mi repositorio!
